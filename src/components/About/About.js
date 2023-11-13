@@ -3,6 +3,7 @@ import ReactGA from 'react-ga';
 import './About.css';
 import Modal from 'react-modal';
 
+import GitCommit from '../../_git_commit';
 import GOVersion from '../../_version';
 import {default as PortForm} from '../PortForm/PortForm'
 import DarkModeContext from '../AppLayout/DarkModeContext';
@@ -75,7 +76,7 @@ class AboutComponent extends Component {
                     ? 'Update by closing and reopening the optimizer once or twice.'
                     : ''
             }
-                
+                <br/> {'Git hash: ' + GitCommit.logMessage.slice(0, 8)}
                 <br/>
                 <a href="https://github.com/gmiclotte/gear-optimizer/issues/new" rel="noopener noreferrer"
                    target="_blank">
