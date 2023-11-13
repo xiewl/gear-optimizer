@@ -24,16 +24,13 @@
     "worker-loader": "^2.0.0"
   },
   "scripts": {
-    "git-info": "echo export default \"{\\\"logMessage\\\": \\\"$(git log -1 --oneline)\\\"}\"  > src/_git_commit.js",
     "start": "react-app-rewired start",
-    "build": "npm run release-it && npm run git-info && react-app-rewired build",
+    "build": "npm run release-it && react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "release-it": "release-it && npm run version",
-    "version": "echo export default \"{$(grep version -m1 package.json)}\"  > src/_version.js",
-    "init": "npm run git-info && npm run version"
+    "release-it": "release-it"
   },
   "eslintConfig": {
     "extends": "react-app"
