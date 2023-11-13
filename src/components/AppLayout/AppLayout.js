@@ -226,11 +226,11 @@ const AppLayout = props => {
                         <nav>
                             <ul className='nav-bar-list'>
                                 <li className='nav-bar-item'>
-                                    <NavLink to='/' exact={true} className='nav-link' activeClassName='active'>Gear</NavLink>
+                                    <NavLink to='/' exact={true} className='nav-link' activeClassName='active'>计算器</NavLink>
                                 </li>
                                 <li className='nav-bar-item'>
                                     <NavLink to='/augment' exact={true} className='nav-link'
-                                        activeClassName='active'>Augments</NavLink>
+                                        activeClassName='active'>挂件</NavLink>
                                 </li>
                                 <li className='nav-bar-item'>
                                     <NavLink to='/ngus' exact={true} className='nav-link' activeClassName='active'>NGUs</NavLink>
